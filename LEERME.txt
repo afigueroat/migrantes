@@ -1,0 +1,7 @@
+CREAR MODELOS
+
+EJECUTAR composer require reliese/laravel
+AÑADIR AL ARCHIVO config/app.php EL PROVEEDOR Reliese\Coders\CodersServiceProvider::class
+PUBLICAR EL ARCHIVO DE CONFIGURACIÓN CON ARTISAN vendor:publish --tag=reliese-models
+CONFIGURAR EL ARCHIVO .ENV Y EL ARCHIVO config/database.php CON LOS DATOS DE LA BASE
+Y FINALMENTE EJECUTAR EL COMANDO: php artisan code:models
